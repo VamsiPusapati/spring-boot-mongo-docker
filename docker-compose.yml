@@ -3,7 +3,7 @@ version: '3.1'
 services:
   springboot:
     image: vamcdochub/springboot-mongodb-docker-compose:4
-    restart: always # This will be ignored if we deploy in docker swarm
+    #restart: always # This will be ignored if we deploy in docker swarm
     environment:
     - MONGO_DB_HOSTNAME=mongo
     - MONGO_DB_USERNAME=devdb
