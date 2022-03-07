@@ -1,4 +1,4 @@
-FROM openjdk:11-alpine
+FROM openjdk:8-alpine
 
 # Required for starting application up.
 RUN apt update && apt /bin/sh
