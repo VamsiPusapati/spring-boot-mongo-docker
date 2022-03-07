@@ -1,7 +1,7 @@
-FROM openjdk:8-alpine
+FROM openjdk:11-alpine
 
 # Required for starting application up.
-RUN apt update && yum apt /bin/sh
+RUN apt update && apt /bin/sh
 
 RUN mkdir -p /opt/app
 ENV PROJECT_HOME /opt/app
